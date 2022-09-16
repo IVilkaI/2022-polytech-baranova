@@ -1,1 +1,1 @@
-# 2022-polytech-baranova
+Ты либо да либо нет
