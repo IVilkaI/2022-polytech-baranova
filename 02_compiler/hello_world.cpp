@@ -1,10 +1,6 @@
-#include <iostream>
-#include <cstdlib> // для system
-using namespace std;
+#include "func.h"
 
-int main() 
-{ 
-    cout << "Hello, world!" << endl;
-    system("pause"); // Только для тех, у кого MS Visual Studio
-    return 0; 
+int main() {
+  print();
+  return 0;
 }
