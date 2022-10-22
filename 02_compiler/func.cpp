@@ -1,7 +1,6 @@
 #include <iostream>
 #include "func.h"
 
-void print()
-{ 
+void print() { 
   std::cout << "Hello world" << std::endl;  
 }
