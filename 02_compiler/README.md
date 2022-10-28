@@ -29,13 +29,13 @@ sys 0m0.040s
 17248
 
 -0fast
-real 1m0.140s
-user 2m0.091s
-sys 3m0.048s
+real 0m0.140s
+user 0m0.091s
+sys 0m0.048s
 18848
 
 -0g
-real 1m0.134s
-user 2m0.088s
-sys 3m0.046s
+real 0m0.134s
+user 0m0.088s
+sys 0m0.046s
 17344
