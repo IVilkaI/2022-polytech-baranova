@@ -23,7 +23,9 @@ int main() {
    std::cout << i * j;
    break;
   case '/':
-   std::cout << i + j;
+   if (j!=0)
+    std::cout << i / j;
+    else std::cout << "ERROR";
    break;
   case '^':
    std::cout << pow(i, j);
