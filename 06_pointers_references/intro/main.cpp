@@ -1,10 +1,11 @@
 #include <cassert>
 #include <cstring>
+#include <iostream>
 
 unsigned int length(const char* str)
 
 {
-    return  strlen(str);
+    return  std::strlen(str);
 }
 
 int main()
