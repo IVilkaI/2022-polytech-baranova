@@ -1,8 +1,6 @@
 #pragma once
 #include <string>
-#include <iostream>
-#include <utility>
-#include <unordered_map>
+#include <vector>
 
 class Token {
 public:
@@ -52,27 +50,24 @@ public:
     }
 };
 
-
 class Json {
 public:
-    std::unordered_map<std::string, Token> json{};
-    explicit Json(std::unordered_map<std::string, Token> j) {
-        json = std::move(j);
-    }
+    std::vector<std::string> keys;
+    std::vector<Token> tokens;
+    Json(std::vector<std::string> k, std::vector<Token> t) : keys(std::move(k)), tokens(std::move(t)) {}
+
     std::string toString() {
-        std::string s = "{";
-        for (auto &i : json) {
-            s.append("\"");
-            s.append(i.first);
-            s.append("\":");
-            s.append(i.second.token);
-            s.append(",");
+        std::string json = "{";
+        for (int i = 0; i < keys.size(); ++i) {
+            json.append("\"");
+            json.append(keys[i]);
+            json.append("\"");
+            json.append(":");
+            json.append(tokens[i].token);
+            json.append(",");
         }
-        if (s.size() > 1) {
-            s.pop_back();
-        }
-        s.append("}");
-        return s;
+        if (json.size() > 1) json.pop_back();
+        json.append("}");
+        return json;
     }
 };
-
