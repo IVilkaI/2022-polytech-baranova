@@ -1,6 +1,7 @@
 #include <cassert>
 #include <iostream>
 
+
 int length(const char* str) {
     if (str == nullptr) return 0;
     int len = 0;
