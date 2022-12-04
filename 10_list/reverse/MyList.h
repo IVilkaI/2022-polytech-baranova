@@ -40,7 +40,7 @@ void reverse(Node** list) {
     *list = prev;
 }
 
-void reverse2(Node** list, int left, int right) {
+void reverse(Node** list, int left, int right) {
     Node* prev = nullptr;
     Node* current = *list;
     Node* next = nullptr;
