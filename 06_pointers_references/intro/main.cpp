@@ -1,11 +1,10 @@
 #include <cassert>
-#include <cstring>
-#include <iostream>
 
-unsigned int length(const char* str)
-
-{
-    return  std::strlen(str);
+int length(const char* str) {
+    if (str == nullptr) return 0;
+    int len = 0;
+    while (str[len] != '\0') ++len;
+    return len;
 }
 
 int main()
